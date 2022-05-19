@@ -1,0 +1,136 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu__link {
+  margin-right: 93px;
+  padding: 24px 0 24px 0;
+  text-decoration: none;
+}
+
+.nav-menu__logo--part2 {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.nav-menu__logo--part1 {
+  color: $active-element;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.nav-list {
+  display: flex;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.nav-list__element {
+  display: flex;
+  align-items: baseline;
+  margin-left: 50px;
+  text-decoration: none;
+  color: $text-color;
+}
+
+.no-margin-left {
+  margin-left: 0;
+}
+
+.nav-list__link:hover {
+  color: $active-element;
+}
+
+.nav-list__link {
+  padding: 34px 0px;
+  text-decoration: none;
+  color: $text-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.header-contacts {
+  margin-left: auto;
+  display: flex;
+  align-items: baseline;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.header-contacts__item {
+  display: flex;
+  align-items: baseline;
+  margin-left: 50px;
+  text-decoration: none;
+  color: $text-color;
+}
+
+.header-contacts__mail {
+  align-items: center;
+  padding: 30px 0;
+  display: flex;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $grey-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts__mail:hover {
+  color: $active-element;
+}
+
+.mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  width: 15px;
+  height: 15px;
+}
+
+.header-contacts__phone {
+  align-items: center;
+  display: flex;
+  padding: 30px 0;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $grey-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts__phone:hover {
+  color: $active-element;
+}
+
+.phone-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  width: 15px;
+  height: 15px;
+}
+
+.nav-list__link--active {
+  color: $active-element;
+}
+
+.nav-list__link--active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background: $active-element;
+  border-radius: 2px;
+}

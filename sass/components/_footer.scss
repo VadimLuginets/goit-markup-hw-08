@@ -1,0 +1,157 @@
+.footer-adress-margin {
+  margin-top: 20px;
+}
+
+.footer-background {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $footer-background-color;
+  color: $white-color;
+}
+
+.footer-logo-web {
+  color: $active-element;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.footer-logo-link {
+  display: block;
+  text-decoration: none;
+  color: $white-color;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.footer-adress {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: $white-color;
+  text-decoration: none;
+}
+
+.footer-item {
+  margin-top: 9px;
+}
+
+.footer-item:first-child {
+  margin-top: 0px;
+}
+
+.footer-link {
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer-follow-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-follow-us-icons {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-list-icons-item {
+  margin-right: 10px;
+}
+
+.footer-list-icons-item:last-child {
+  margin-right: 0px;
+}
+
+.footer-list-icons {
+  margin: 20px 0 0 0;
+}
+
+.footer-button-icons-follow {
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: $footer-button-background-color;
+  fill: $white-color;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button-icons-follow:hover {
+  background: $active-element;
+  fill: $white-color;
+}
+
+.follow-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.button-telegram {
+  width: 200px;
+  height: 50px;
+  background-color: $active-element;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  justify-content: center;
+  margin-left: 12px;
+}
+
+.button-telegram:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.svg-telegram {
+  fill: $white-color;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.mail-input {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: none;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  color: $white-color;
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-follow-telegram {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
