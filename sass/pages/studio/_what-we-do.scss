@@ -1,40 +1,50 @@
 .what-we-do {
-    margin-bottom: 50px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.list-settings {
+  display: flex;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.cards-wdw {
+  margin-right: 30px;
+}
+
+.wdw-div {
+  position: relative;
+}
+
+.wdw-description {
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white-color;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.display {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 
-  .list-settings {
-    display: flex;
-    font-weight: 500;
-    letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: none;
   }
-
-  .cards-wdw {
-    margin-right: 30px;
-  }
-
-  .wdw-div {
-    position: relative;
-  }
-
-  .wdw-description {
-    position: absolute;
-    background: rgba(47, 48, 58, 0.8);
-    width: 100%;
-    height: 70px;
-    bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $white-color;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
+}

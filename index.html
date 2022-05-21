@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="container flex">
+      <div class="container flex position">
         <nav class="nav-menu">
           <a class="nav-menu__link" href="./index.html"
             ><p class="nav-menu__logo nav-menu__logo--part2">
@@ -66,11 +66,19 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="nav-menu__button" data-modal-open-mobile>
+          <svg class="nav-menu__svg">
+            <use
+              class="nav-menu__svg--open"
+              href="./images/symbol-defs.svg#icon-menu_40px-1"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <section class="section hero">
-        <div class="container">
+        <div class="container hero__block">
           <h1 class="hero-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <button type="button" class="hero-button" data-modal-open>
             Заказать услугу
@@ -132,40 +140,65 @@
           </ul>
         </div>
       </section>
-      <section class="section section-no-padding-top">
+      <section class="section section-no-padding-top display">
         <div class="container">
           <h2 class="what-we-do">Чем мы занимаемся</h2>
           <ul class="list-settings">
             <li class="cards-wdw">
               <div class="wdw-div">
-                <img
-                  width="370"
-                  height="294"
-                  src="images/photo1.jpg"
-                  alt="photo from section what do we do"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/img16.jpg   1x,
+                      ./images/desktop/img162x.jpg 2x
+                    "
+                    media="(min-width: 1199px)"
+                  />
+                  <img
+                    src="images/photo1.jpg"
+                    alt="photo from section what do we do"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="wdw-description">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
               </div>
             </li>
             <li class="cards-wdw">
               <div class="wdw-div">
-                <img
-                  width="370"
-                  height="294"
-                  src="images/photo2.jpg"
-                  alt="photo from section what do we do"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/img-1.jpg   1x,
+                      ./images/desktop/img2x-1.jpg 2x
+                    "
+                    media="(min-width: 1199px)"
+                  />
+                  <img
+                    src="images/photo2.jpg"
+                    alt="photo from section what do we do"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="wdw-description">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
               </div>
             </li>
             <li class="cards-wdw">
               <div class="wdw-div">
-                <img
-                  width="370"
-                  height="294"
-                  src="images/photo3.jpg"
-                  alt="photo from section what do we do"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/img-2.jpg   1x,
+                      ./images/desktop/img2x-2.jpg 2x
+                    "
+                    media="(min-width: 1199px)" />
+                  <img
+                    src="images/photo3.jpg"
+                    alt="photo from section what do we do"
+                    width="370"
+                    height="294"
+                /></picture>
                 <p class="wdw-description">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
               </div>
             </li>
@@ -177,12 +210,34 @@
           <h2 class="name-section">Наша команда</h2>
           <ul class="list-settings">
             <li class="cards">
-              <img
-                width="270"
-                height="260"
-                src="images/igordemyanenko.jpg"
-                alt="photo from section our team"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/img.jpg   1x,
+                    ./images/mobile/img2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/img-3.jpg   1x,
+                    ./images/desktop/img2x-3.jpg 2x
+                  "
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img.jpg   1x,
+                    ./images/tablet/img2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="cards__img"
+                  src="images/igordemyanenko.jpg"
+                  alt="photo from section our team"
+                />
+              </picture>
               <div class="our-teammate-block">
                 <h3 class="our-teammate-block__name">Игорь Демьяненко</h3>
                 <p class="our-teammate-block__position">Product Designer</p>
@@ -227,12 +282,34 @@
               </div>
             </li>
             <li class="cards">
-              <img
-                width="270"
-                height="260"
-                src="images/olgarepina.jpg"
-                alt="photo from section our team"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/img-1.jpg   1x,
+                    ./images/mobile/img2x-1.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/img-4.jpg   1x,
+                    ./images/desktop/img2x-4.jpg 2x
+                  "
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img-1.jpg   1x,
+                    ./images/tablet/img2x-1.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="cards__img"
+                  src="images/olgarepina.jpg"
+                  alt="photo from section our team"
+                />
+              </picture>
               <div class="our-teammate-block">
                 <h3 class="our-teammate-block__name">Ольга Репина</h3>
                 <p class="our-teammate-block__position">Frontend Developer</p>
@@ -277,12 +354,34 @@
               </div>
             </li>
             <li class="cards">
-              <img
-                width="270"
-                height="260"
-                src="images/nikolaitarasov.jpg"
-                alt="photo from section our team"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/img-2.jpg   1x,
+                    ./images/mobile/img2x-2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/img-5.jpg   1x,
+                    ./images/desktop/img2x-5.jpg 2x
+                  "
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img-2.jpg   1x,
+                    ./images/tablet/img2x-2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="cards__img"
+                  src="images/nikolaitarasov.jpg"
+                  alt="photo from section our team"
+                />
+              </picture>
               <div class="our-teammate-block">
                 <h3 class="our-teammate-block__name">Николай Тарасов</h3>
                 <p class="our-teammate-block__position">Marketing</p>
@@ -327,12 +426,34 @@
               </div>
             </li>
             <li class="cards">
-              <img
-                width="270"
-                height="260"
-                src="images/mikhailermakov.jpg"
-                alt="photo from section our team"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/img-3.jpg   1x,
+                    ./images/mobile/img2x-3.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/img-6.jpg   1x,
+                    ./images/desktop/img2x-6.jpg 2x
+                  "
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img-3.jpg   1x,
+                    ./images/tablet/img2x-3.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="cards__img"
+                  src="images/mikhailermakov.jpg"
+                  alt="photo from section our team"
+                />
+              </picture>
               <div class="our-teammate-block">
                 <h3 class="our-teammate-block__name">Михаил Лермаков</h3>
                 <p class="our-teammate-block__position">UI Designer</p>
@@ -382,7 +503,7 @@
       <section class="section">
         <div class="container">
           <h2 class="name-section">Постоянные клиенты</h2>
-          <ul class="flex">
+          <ul class="client">
             <li class="client-list">
               <a href="" class="client-list__button">
                 <svg class="client-list__logo">
@@ -431,12 +552,12 @@
     </main>
     <footer class="footer-background">
       <div class="container footer-box">
-        <div>
+        <div class="footer-contact-box">
           <a class="footer-logo-link" href="./index.html">
             <span class="footer-logo-web">Web</span>Studio
           </a>
           <address class="footer-adress-margin flex">
-            <ul>
+            <ul class="footer-contact-list">
               <li class="footer-item">
                 <a class="footer-adress" href=""
                   >г. Киев, пр-т Леси Украинки, 26</a
@@ -488,7 +609,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-follow-telegram-box">
           <span class="follow-text">Подпишитесь на рассылку</span>
           <div class="footer-follow-telegram">
             <input
@@ -594,6 +715,61 @@
         </div>
       </div>
     </div>
+
+    <div class="backdrop is-hidden" data-modal-mobile>
+      <div class="nav-modal">
+        <button type="button" class="nav-modal__button" data-modal-close-mobile>
+          <svg class="nav-menu__svg">
+            <use
+              class="nav-menu___svg--close"
+              href="./images/symbol-defs.svg#icon-close_40px-1"
+            ></use>
+          </svg>
+        </button>
+        <ul class="nav-root">
+          <li>
+            <a class="nav-root__item nav-root__item--active" href="./index.html"
+              >Студия</a
+            >
+          </li>
+          <li>
+            <a class="nav-root__item" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li><a class="nav-root__item" href="">Контакты</a></li>
+        </ul>
+        <ul class="nav-modal-contact">
+          <li>
+            <a class="nav-modal-contact__item" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li>
+            <a class="nav-modal-contact__item" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="nav-follov">
+          <li><a class="nav-follov__item" href="">Instagram</a></li>
+          <li>
+            <a class="nav-follov__item" href=""
+              ><span class="nav-follov__item--stick">|</span>Twitter</a
+            >
+          </li>
+          <li>
+            <a class="nav-follov__item" href=""
+              ><span class="nav-follov__item--stick">|</span>Facebook</a
+            >
+          </li>
+          <li>
+            <a class="nav-follov__item" href=""
+              ><span class="nav-follov__item--stick">|</span>Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

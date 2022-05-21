@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="container flex">
+      <div class="container flex position">
         <nav class="nav-menu">
           <a class="nav-menu__link" href="./index.html"
             ><p class="nav-menu__logo nav-menu__logo--part2">
@@ -66,6 +66,14 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="nav-menu__button" data-modal-open-mobile>
+          <svg class="nav-menu__svg">
+            <use
+              class="nav-menu__svg--open"
+              href="./images/symbol-defs.svg#icon-menu_40px-1"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -99,12 +107,34 @@
             <li class="projects-list__card">
               <a class="projects-list__link" href=""
                 ><div class="slider">
-                  <img
-                    width="370"
-                    height="294"
-                    src="images/Technocrack.jpg"
-                    alt="Technocrack"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/img-4.jpg   1x,
+                        ./images/mobile/img2x-4.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/img-7.jpg   1x,
+                        ./images/desktop/img2x-7.jpg 2x
+                      "
+                      media="(min-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-4.jpg   1x,
+                        ./images/tablet/img2x-4.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      class="project-label"
+                      src="images/Technocrack.jpg"
+                      alt="Technocrack"
+                    />
+                  </picture>
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -120,12 +150,34 @@
             <li class="projects-list__card">
               <a class="projects-list__link" href=""
                 ><div class="slider">
-                  <img
-                    width="370"
-                    height="294"
-                    src="images/NewOrleanVsGoldenStar.jpg"
-                    alt="NewOrleanVsGoldenStar"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/img-5.jpg   1x,
+                        ./images/mobile/img2x-5.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/img-8.jpg   1x,
+                        ./images/desktop/img2x-8.jpg 2x
+                      "
+                      media="(min-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-5.jpg   1x,
+                        ./images/tablet/img2x-5.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      class="project-label"
+                      src="images/NewOrleanVsGoldenStar.jpg"
+                      alt="NewOrleanVsGoldenStar"
+                    />
+                  </picture>
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -143,12 +195,34 @@
             <li class="projects-list__card">
               <a class="projects-list__link" href=""
                 ><div class="slider">
-                  <img
-                    width="370"
-                    height="294"
-                    src="images/Seafood.jpg"
-                    alt="Seafood"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/img-6.jpg   1x,
+                        ./images/mobile/img2x-6.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/img-9.jpg   1x,
+                        ./images/desktop/img2x-9.jpg 2x
+                      "
+                      media="(min-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-6.jpg   1x,
+                        ./images/tablet/img2x-6.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      class="project-label"
+                      src="images/Seafood.jpg"
+                      alt="Seafood"
+                    />
+                  </picture>
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -164,12 +238,34 @@
             <li class="projects-list__card">
               <a class="projects-list__link" href=""
                 ><div class="slider">
-                  <img
-                    width="370"
-                    height="294"
-                    src="images/PrimeProject.jpg"
-                    alt="PrimeProject"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/img-7.jpg   1x,
+                        ./images/mobile/img2x-7.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/img-10.jpg   1x,
+                        ./images/desktop/img2x-10.jpg 2x
+                      "
+                      media="(min-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-7.jpg   1x,
+                        ./images/tablet/img2x-7.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      class="project-label"
+                      src="images/PrimeProject.jpg"
+                      alt="PrimeProject"
+                    />
+                  </picture>
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -185,12 +281,34 @@
             <li class="projects-list__card">
               <a class="projects-list__link" href=""
                 ><div class="slider">
-                  <img
-                    width="370"
-                    height="294"
-                    src="images/BoxesProject.jpg"
-                    alt="BoxesProject"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/img-8.jpg   1x,
+                        ./images/mobile/img2x-8.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/img-11.jpg   1x,
+                        ./images/desktop/img2x-11.jpg 2x
+                      "
+                      media="(min-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-8.jpg   1x,
+                        ./images/tablet/img2x-8.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      class="project-label"
+                      src="images/BoxesProject.jpg"
+                      alt="BoxesProject"
+                    />
+                  </picture>
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -206,12 +324,34 @@
             <li class="projects-list__card">
               <a class="projects-list__link" href=""
                 ><div class="slider">
-                  <img
-                    width="370"
-                    height="294"
-                    src="images/InspirationHasNoBorders.jpg"
-                    alt="InspirationHasNoBorders"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/img-9.jpg   1x,
+                        ./images/mobile/img2x-9.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/img-12.jpg   1x,
+                        ./images/desktop/img2x-12.jpg 2x
+                      "
+                      media="(min-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-9.jpg   1x,
+                        ./images/tablet/img2x-9.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      class="project-label"
+                      src="images/InspirationHasNoBorders.jpg"
+                      alt="InspirationHasNoBorders"
+                    />
+                  </picture>
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -229,12 +369,34 @@
             <li class="projects-list__card">
               <a class="projects-list__link" href=""
                 ><div class="slider">
-                  <img
-                    width="370"
-                    height="294"
-                    src="images/LimitedEdition.jpg"
-                    alt="LimitedEdition"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/img-10.jpg   1x,
+                        ./images/mobile/img2x-10.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/img-13.jpg   1x,
+                        ./images/desktop/img2x-13.jpg 2x
+                      "
+                      media="(min-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-10.jpg   1x,
+                        ./images/tablet/img2x-10.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      class="project-label"
+                      src="images/LimitedEdition.jpg"
+                      alt="LimitedEdition"
+                    />
+                  </picture>
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -252,12 +414,34 @@
             <li class="projects-list__card">
               <a class="projects-list__link" href=""
                 ><div class="slider">
-                  <img
-                    width="370"
-                    height="294"
-                    src="images/LabProject.jpg"
-                    alt="LabProject"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/img-11.jpg   1x,
+                        ./images/mobile/img2x-11.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/img-14.jpg   1x,
+                        ./images/desktop/img2x-14.jpg 2x
+                      "
+                      media="(min-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-11.jpg   1x,
+                        ./images/tablet/img2x-11.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      class="project-label"
+                      src="images/LabProject.jpg"
+                      alt="LabProject"
+                    />
+                  </picture>
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -273,12 +457,34 @@
             <li class="projects-list__card">
               <a class="projects-list__link" href=""
                 ><div class="slider">
-                  <img
-                    width="370"
-                    height="294"
-                    src="images/GrowingBusiness.jpg"
-                    alt="GrowingBusiness"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/img-12.jpg   1x,
+                        ./images/mobile/img2x-12.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/img-15.jpg   1x,
+                        ./images/desktop/img2x-15.jpg 2x
+                      "
+                      media="(min-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-12.jpg   1x,
+                        ./images/tablet/img2x-12.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      class="project-label"
+                      src="images/GrowingBusiness.jpg"
+                      alt="GrowingBusiness"
+                    />
+                  </picture>
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -297,12 +503,12 @@
     </main>
     <footer class="footer-background">
       <div class="container footer-box">
-        <div>
+        <div class="footer-contact-box">
           <a class="footer-logo-link" href="./index.html">
             <span class="footer-logo-web">Web</span>Studio
           </a>
           <address class="footer-adress-margin flex">
-            <ul>
+            <ul class="footer-contact-list">
               <li class="footer-item">
                 <a class="footer-adress" href=""
                   >г. Киев, пр-т Леси Украинки, 26</a
@@ -354,7 +560,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-follow-telegram-box">
           <span class="follow-text">Подпишитесь на рассылку</span>
           <div class="footer-follow-telegram">
             <input
@@ -373,5 +579,59 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal-mobile>
+      <div class="nav-modal">
+        <button type="button" class="nav-modal__button" data-modal-close-mobile>
+          <svg class="nav-menu__svg">
+            <use
+              class="nav-menu___svg--close"
+              href="./images/symbol-defs.svg#icon-close_40px-1"
+            ></use>
+          </svg>
+        </button>
+        <ul class="nav-root">
+          <li><a class="nav-root__item" href="./index.html">Студия</a></li>
+          <li>
+            <a
+              class="nav-root__item nav-root__item--active"
+              href="//portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li><a class="nav-root__item" href="">Контакты</a></li>
+        </ul>
+        <ul class="nav-modal-contact">
+          <li>
+            <a class="nav-modal-contact__item" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li>
+            <a class="nav-modal-contact__item" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="nav-follov">
+          <li><a class="nav-follov__item" href="">Instagram</a></li>
+          <li>
+            <a class="nav-follov__item" href=""
+              ><span class="nav-follov__item--stick">|</span>Twitter</a
+            >
+          </li>
+          <li>
+            <a class="nav-follov__item" href=""
+              ><span class="nav-follov__item--stick">|</span>Facebook</a
+            >
+          </li>
+          <li>
+            <a class="nav-follov__item" href=""
+              ><span class="nav-follov__item--stick">|</span>Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

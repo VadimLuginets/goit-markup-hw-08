@@ -10,6 +10,14 @@
   display: flex;
   font-weight: 500;
   letter-spacing: 0.02em;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .cards {
@@ -20,12 +28,36 @@
   border-radius: 0px 0px 4px 4px;
 
   &:last-child {
-    margin-right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(1n + 3) {
+      margin-top: 30px;
+    }
+    &:nth-child(2n + 2) {
+      margin-left: 30px;
+    }
+
+    margin: 0;
+    width: 354px;
   }
 }
 
 .our-teammate-block {
   padding: 30px 32px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 24px 74px;
+  }
 }
 
 .our-teammate-block__name {
@@ -45,8 +77,12 @@
 
 .our-teammate__follow {
   display: flex;
-  align-items: center;
   margin-top: 16px;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 
 .list-icons-item {
@@ -81,4 +117,19 @@
 
 .our-team-background {
   background: $background-white-grey;
+}
+
+.cards__img {
+  width: 270px;
+  height: 260px;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 460px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    height: 374px;
+  }
 }

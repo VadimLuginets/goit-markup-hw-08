@@ -2,14 +2,25 @@
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: normal;
+  }
 }
 
 .filtres-list__item {
   margin-right: 8px;
-}
 
-.filtres-list__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:nth-child(1n + 4) {
+      margin-top: 15px;
+    }
+  }
 }
 
 .filtres-list__button {
@@ -43,11 +54,35 @@
   margin-top: -30px;
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 
 .projects-list__card {
   margin-top: 30px;
   margin-right: 30px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    &:nth-child(1n + 2) {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    &:nth-child(1n + 3) {
+      margin-top: 30px;
+    }
+
+    &:nth-child(2n + 2) {
+      margin-left: 30px;
+    }
+  }
 }
 
 .projects-list__card:nth-child(3n + 3) {
@@ -60,7 +95,10 @@
 
 .projects-list__link {
   text-decoration: none;
-  display: block;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
 }
 
 .section-no-padding-top {
@@ -99,14 +137,24 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   box-sizing: border-box;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
 }
-
 .project-description__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: $text-color;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
 }
 
 .project-description__type {
@@ -115,4 +163,21 @@
   font-size: 16px;
   line-height: 1.88;
   color: $grey-color;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.project-label {
+  width: 370px;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }

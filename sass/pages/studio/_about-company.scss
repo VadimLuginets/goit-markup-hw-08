@@ -2,6 +2,14 @@
   display: flex;
   font-weight: 500;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 
 .about-us__item {
@@ -9,6 +17,24 @@
   margin-right: 30px;
   &:last-child {
     margin-right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:nth-child(1n + 2) {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    margin: 0;
+    &:nth-child(1n + 3) {
+      margin-top: 30px;
+    }
+
+    &:nth-child(2n + 2) {
+      margin-left: 30px;
+    }
   }
 }
 
@@ -26,6 +52,14 @@
   width: 270px;
   height: 120px;
   background-color: $background-white-grey;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }
 
 .about-us__head {
@@ -33,6 +67,11 @@
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    width: 450px;
+  }
 }
 
 .about-us__text {
@@ -40,4 +79,12 @@
   line-height: 1.71;
   color: $grey-color;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

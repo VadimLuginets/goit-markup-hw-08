@@ -12,6 +12,11 @@
   margin-right: 93px;
   padding: 24px 0 24px 0;
   text-decoration: none;
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    padding: 16px 0;
+  }
 }
 
 .nav-menu__logo--part2 {
@@ -20,6 +25,12 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .nav-menu__logo--part1 {
@@ -28,12 +39,21 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .nav-list {
   display: flex;
   font-weight: 500;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .nav-list__element {
@@ -66,6 +86,14 @@
   align-items: baseline;
   font-weight: 500;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
 }
 
 .header-contacts__item {
@@ -74,6 +102,14 @@
   margin-left: 50px;
   text-decoration: none;
   color: $text-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .header-contacts__mail {
@@ -85,6 +121,10 @@
   letter-spacing: 0.02em;
   color: $grey-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;
+  }
 }
 
 .header-contacts__mail:hover {
@@ -107,6 +147,10 @@
   letter-spacing: 0.02em;
   color: $grey-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;
+  }
 }
 
 .header-contacts__phone:hover {
@@ -133,4 +177,126 @@
   height: 4px;
   background: $active-element;
   border-radius: 2px;
+}
+
+.nav-modal {
+  background-color: white;
+  width: 480px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 48px 40px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+}
+.nav-root {
+  position: relative;
+}
+.nav-root__item {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $text-color;
+
+  &:hover {
+    color: $active-element;
+  }
+}
+.nav-modal-contact {
+  margin-top: 300px;
+}
+.nav-modal-contact__item {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: $grey-color;
+
+  &:hover {
+    color: $active-element;
+  }
+}
+
+.nav-follov {
+  display: flex;
+  margin-top: 60px;
+}
+
+.nav-follov__item {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $active-element;
+}
+
+.nav-follov__item--stick {
+  color: $grey-color;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-modal__button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 7px;
+  right: 0px;
+
+  &:hover {
+    fill: $active-element;
+  }
+}
+
+.nav-menu__button {
+  right: 0px;
+  position: absolute;
+  border: none;
+  background: none;
+
+  @media screen and (max-width: 767px) {
+    &:hover {
+      fill: $active-element;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-menu__svg {
+  width: 40px;
+  height: 40px;
+}
+
+.position {
+  position: relative;
+}
+
+.nav-menu__svg--open {
+}
+
+.nav-menu__svg--close {
+  display: none;
+  &:hover {
+    fill: none;
+  }
+}
+
+.nav-root__item--active {
+  color: $active-element;
 }
