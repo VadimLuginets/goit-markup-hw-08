@@ -79,7 +79,11 @@
   display: flex;
   margin-top: 16px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 0px) and (max-width: 479px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 479px) and (max-width: 767px) {
     padding-left: 90px;
     padding-right: 90px;
   }
@@ -120,10 +124,11 @@
 }
 
 .cards__img {
-  width: 270px;
-  height: 260px;
+  @media screen and (min-width: 0) and (max-width: 479px) {
+    width: 100%;
+  }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 450px;
     height: 460px;
   }

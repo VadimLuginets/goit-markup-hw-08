@@ -1,0 +1,146 @@
+.nav-modal {
+  background-color: white;
+  max-width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 48px 40px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.nav-root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 10 1 auto;
+}
+
+.nav-root__li {
+  &:nth-child(1n + 2) {
+    margin-top: 32px;
+  }
+}
+
+.nav-root__item {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: $text-color;
+
+  &:hover {
+    color: $active-element;
+  }
+}
+
+.nav-modal-contact {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin-top: auto;
+}
+
+.nav-modal-contact__li {
+  &:nth-child(1n + 2) {
+    margin-top: 32px;
+  }
+}
+
+.nav-modal-contact__item {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: $grey-color;
+
+  &:hover {
+    color: $active-element;
+  }
+}
+
+.nav-follov {
+  position: relative;
+  display: flex;
+  flex: 0 1 auto;
+  margin-top: 64px;
+}
+
+.nav-follov__item {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $active-element;
+}
+
+.nav-follov__item--stick {
+  color: $grey-color;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-modal__button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 7px;
+  right: 0px;
+
+  &:hover {
+    fill: $active-element;
+  }
+}
+
+.nav-menu__button {
+  right: 0px;
+  position: absolute;
+  border: none;
+  background: none;
+
+  @media screen and (max-width: 767px) {
+    &:hover {
+      fill: $active-element;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-menu__svg {
+  width: 40px;
+  height: 40px;
+}
+
+.position {
+  position: relative;
+}
+
+.nav-menu__svg--open {
+}
+
+.nav-menu__svg--close {
+  display: none;
+  &:hover {
+    fill: none;
+  }
+}
+
+.nav-root__item--active {
+  color: $active-element;
+}

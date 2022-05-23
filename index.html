@@ -77,8 +77,8 @@
       </div>
     </header>
     <main>
-      <section class="section hero">
-        <div class="container hero__block">
+      <section class="hero">
+        <div class="hero__block">
           <h1 class="hero-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <button type="button" class="hero-button" data-modal-open>
             Заказать услугу
@@ -501,7 +501,7 @@
         </div>
       </section>
       <section class="section">
-        <div class="container">
+        <div class="container container--fix">
           <h2 class="name-section">Постоянные клиенты</h2>
           <ul class="client">
             <li class="client-list">
@@ -550,7 +550,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-background">
+    <footer class=" footer-background">
       <div class="container footer-box">
         <div class="footer-contact-box">
           <a class="footer-logo-link" href="./index.html">
@@ -727,30 +727,34 @@
           </svg>
         </button>
         <ul class="nav-root">
-          <li>
+          <li class="nav-root__li">
             <a class="nav-root__item nav-root__item--active" href="./index.html"
               >Студия</a
             >
           </li>
-          <li>
+          <li class="nav-root__li">
             <a class="nav-root__item" href="./portfolio.html">Портфолио</a>
           </li>
-          <li><a class="nav-root__item" href="">Контакты</a></li>
+          <li class="nav-root__li">
+            <a class="nav-root__item" href="">Контакты</a>
+          </li>
         </ul>
         <ul class="nav-modal-contact">
-          <li>
+          <li class="nav-modal-contact__li">
             <a class="nav-modal-contact__item" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
-          </li>
-          <li>
+          </li  class="nav-root__li">
+          <li class="nav-modal-contact__li">
             <a class="nav-modal-contact__item" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
         </ul>
         <ul class="nav-follov">
-          <li><a class="nav-follov__item" href="">Instagram</a></li>
+          <li>
+            <a class="nav-follov__item" href="">Instagram</a>
+          </li>
           <li>
             <a class="nav-follov__item" href=""
               ><span class="nav-follov__item--stick">|</span>Twitter</a

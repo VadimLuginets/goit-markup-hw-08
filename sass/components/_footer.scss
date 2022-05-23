@@ -91,6 +91,12 @@
   @media screen and (max-width: 767px) {
     margin-top: 60px;
     margin-bottom: 60px;
+    flex: 1 1 auto;
+    flex-direction: column;
+    max-width: 480px;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -102,6 +108,12 @@
   cursor: pointer;
   width: 20px;
   height: 20px;
+}
+
+.footer-list-icons {
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 
 .footer-list-icons-item {
@@ -201,7 +213,6 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: none;
-  width: 358px;
   height: 50px;
   padding: 15px 16px;
   color: $white-color;
@@ -211,10 +222,15 @@
 
   @media screen and (max-width: 767px) {
     width: 100%;
+    max-width: 450px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 
@@ -223,8 +239,10 @@
   align-items: baseline;
 
   @media screen and (max-width: 767px) {
-    display: block;
+    padding: 0 15px;
+    flex-direction: column;
     width: 100%;
+    align-items: stretch;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -239,7 +257,9 @@
   display: flex;
   align-items: baseline;
   @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -249,7 +269,11 @@
 
 .footer-contact-box {
   @media screen and (max-width: 767px) {
-    width: 100%;
+    flex: 1 1 auto;
+    flex-direction: column;
+    max-width: 480px;
+    align-items: center;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -267,7 +291,11 @@
   display: block;
 
   @media screen and (max-width: 767px) {
-    width: 100%;
+    max-width: 480px;
+    flex: 1 1 auto;
+    flex-direction: column;
+    max-width: 480px;
+    align-items: stretch;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
